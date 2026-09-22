@@ -1,0 +1,88 @@
+Chomp sieve V4 corrected production manifest
+===========================================
+
+Result
+------
+Target: all rectangular Chomp P-positions through 18x18
+Total catalog entries: 38,331,741
+Seed entries: 1,545,962
+Generated entries including conjugates: 36,785,779
+Final class R(18,17): 4,756,890 new positions
+
+Method changes from V3
+----------------------
+1. Boundary expansion children are routed directly to their known (width,height)
+   shard, avoiding repeated popcount/bit-length class recovery.
+2. Interior corner moves use a specialized bit transform. Because these moves
+   retain the leading one and trailing zero, general normalization is a no-op.
+3. Once a whole class is above the immutable seed frontier, corner probes use
+   its already-known ClassShard directly.
+4. The first computed class overlaps the seed frontier, so it deliberately uses
+   the general seed-aware lookup. This fallback is required for correctness.
+5. The production executable uses GCC profile-guided optimization trained on
+   the representative R(17,13) workload, plus -O3 -march=native -flto.
+
+Correctness gates
+-----------------
+- Fresh through-14x14 regression: all 256,248 generated entries exactly equal
+  the independent baseline.
+- Frontier regression R(18,11): exactly 76,410 new positions.
+- Corrected clean checkpoint is byte-for-byte identical to the definitive V3
+  checkpoint.
+- Merged V4 catalog is byte-for-byte identical to the definitive V3 catalog.
+- Final aggregate counters match V3:
+  tested=1,600,099,150; basic=1,300,363,178; known=65,114,201;
+  width=304,280,267; height=230,802,703; corner=1,046,543,825.
+
+Production timing (9 worker threads)
+------------------------------------
+The terminal interrupted attempt 2 during R(18,16). The append-only checkpoint
+was intact through R(17,16), and production resumed from that exact boundary.
+Accepted completed segments, including the checkpoint reload, total 28m20s:
+
+  13x13  0m03s
+  14x14  0m12s
+  15x15  0m49s
+  16x16  2m52s
+  17x17  8m48s
+  resume through 18x16  7m59s
+  resume through 18x18 19m32s
+
+V3 clean total: 34m16s
+V4 accepted-segment total: 28m20s
+Reduction: 5m56s (17.3%)
+
+Representative corrected R(17,13) full-catalog benchmark:
+  V3: 23.655s wall
+  V4 PGO: 21.278s wall
+  Counts were identical.
+
+Rejected experiment
+-------------------
+An earlier V4 attempt bypassed the seed-aware lookup even in the frontier-
+overlapping class. Small and fully preloaded replay tests did not expose it;
+fresh production did, beginning at R(18,11). That checkpoint and log are
+rejected and are not part of the package. The corrected fallback above was then
+validated at the first divergent class before the accepted production.
+
+SHA-256
+-------
+chomp_sieve_v4.cpp
+  8fcd798bffd074eb12bf9f95b2d6cf0089fac43c46cc986b67ecb7a533cf3d0b
+chomp_sieve_v4_pgo3
+  07687ae23e2c1551f7c773b3fa67d838c675a8a936f20872aaef477c1cc5cca5
+sieve18_v4_clean2_checkpoint.bin
+  e19bab7df05973f8425de4d48ac31668e66d9af76a13e26322f3e3f2e59e75a3
+chomp_ppositions_18x18_v4_clean.bin
+  def8a19ddd7c214ac052e3e2e415956360b678d12b1ecd33bc1b9fa477faef00
+sieve18_v4_clean2.log
+  5ea176042a15107afe7f7c70c5ef01c2d1e5ca84ad46fa28b463ec9b9e64b3d8
+
+Files
+-----
+chomp_sieve_v4.cpp                 corrected V4 source
+chomp_sieve_v4_pgo3                production executable for this machine
+chomp_sieve_v4.gcda                GCC training profile
+sieve18_v4_clean2.log              accepted production class log
+sieve18_v4_clean2_checkpoint.bin   accepted checksummed class deltas
+chomp_ppositions_18x18_v4_clean.bin merged final catalog
