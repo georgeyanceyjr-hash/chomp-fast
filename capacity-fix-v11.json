@@ -1,0 +1,17 @@
+{
+  "version": "V10 with 64-bit filter-capacity counters",
+  "algorithm_change": false,
+  "reason": "32-bit power-of-two Bloom capacity wraps when a class exceeds floor(2^31/12)=178956970 keys. Widen both stored and target bit counts before dimension20.",
+  "published_source_sha256": "2e0ce1430a1e5d59cd424c50504687aea693ed11f157fd1f5dbaad7cb2b725b7",
+  "run_source_sha256": "5ce78972e5d9f6382fa870a516624e12560db00b030b9d7df2528973d8993244",
+  "replacements": [
+    [
+      "uint32_t bloom_bits=0;",
+      "uint64_t bloom_bits=0;"
+    ],
+    [
+      "uint32_t wanted=1u<<15;",
+      "uint64_t wanted=1ull<<15;"
+    ]
+  ]
+}

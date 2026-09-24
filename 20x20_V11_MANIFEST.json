@@ -1,0 +1,129 @@
+{
+  "version": "V11",
+  "release_tag": "v11-20x20",
+  "status": "completed20x20 continuation and full catalog validation",
+  "counts": {
+    "seed_positions": 102,
+    "dimension20_base_positions": 34,
+    "historical19_checkpoint_positions": 146561644,
+    "new_width20_checkpoint_positions": 304691516,
+    "total_unique_positions": 451253296,
+    "previous19_total": 146561777,
+    "increase_over19": 304691519,
+    "new_base_positions_over19": 3,
+    "preload_records": 137,
+    "new_checkpoint_records": 17,
+    "terminal_class": [
+      20,
+      19
+    ]
+  },
+  "timing": {
+    "state": "validated",
+    "version": "V11",
+    "dimension": 20,
+    "workers": 9,
+    "previous19_positions": 146561777,
+    "source_sha256": "5ce78972e5d9f6382fa870a516624e12560db00b030b9d7df2528973d8993244",
+    "binary_sha256": "3a720c09478a3c5842313f33e68b643610ff8475cba2010c60cbf168f56d336c",
+    "seed_sha256": "d9d23f9b2779a6c991d6c62d1a78f244c64dbaadadf365619574e2ec28661a36",
+    "preload_sha256": "dd2a903c45f9af8ceb5650315ba52a53f44ea14e094f69d9115748c442c22587",
+    "base20_sha256": "3a9c51c5f66dd539cd07c81121ddc0e2104356b76c73a4eec7aa1fad0b6f1c12",
+    "started_at": "2026-09-24T16:56:29.589054+00:00",
+    "timing_scope": "solver launch through exit, including preload loading and checkpoint writes; excludes preparation, post-run verification and catalog merge",
+    "exit_code": 0,
+    "wall_seconds": 1344.416611708,
+    "finished_at": "2026-09-24T17:18:53.991379+00:00",
+    "total_unique_positions": 451253296,
+    "new_positions_beyond19": 304691519,
+    "catalog_bytes": 3610026400,
+    "validation_wall_seconds": 15.5869648339999,
+    "validated_at": "2026-09-24T17:19:09.579389+00:00",
+    "checkpoint_records": 17,
+    "terminal_class": [
+      20,
+      19
+    ],
+    "validation_scope": "Every CHOMPCP2 checksum, strict per-record order, width/height bounds, complete17-class width20 sequence, no duplicates across seed/preload/new checkpoint; complete sorted64-bit catalog. Capacity change matched full18 reference; continuation matched independent8x8. No independent full20 reference comparison.",
+    "historical_run_label": "V10 capacity64",
+    "command": [
+      "./chomp_sieve_v11",
+      "seed.bin",
+      "20",
+      "checkpoint20.bin",
+      "preload20.bin",
+      "20",
+      "0",
+      "9"
+    ],
+    "validation_command": [
+      "./validate_merge_v11",
+      "seed.bin",
+      "preload20.bin",
+      "checkpoint20.bin",
+      "chomp_ppositions_20x20_v11.bin"
+    ]
+  },
+  "scope_note": "Continuation from the complete validated19x19 database. This is not a fresh20x20 timing. No independent full20 catalog comparison has been performed.",
+  "format": {
+    "magic": "CHOMPP02",
+    "byte_order": "little-endian",
+    "header": "8-byte magic, uint64 count, uint64 maximum key, uint32 max_width, uint32 max_height",
+    "payload": "strictly ascending unique uint64 boundary keys;1=right,0=down; leading1/trailing0; poisoned singleton included",
+    "catalog_bytes": 3610026400
+  },
+  "provenance": {
+    "historical_source": "chomp_sieve_v10_capacity64.cpp",
+    "published_source": "chomp_sieve_v11.cpp",
+    "source_bytes_unchanged": true,
+    "historical_catalog": "chomp_ppositions_20x20_v10.bin",
+    "published_catalog": "chomp_ppositions_20x20_v11.bin",
+    "catalog_bytes_unchanged": true,
+    "run_source_sha256": "5ce78972e5d9f6382fa870a516624e12560db00b030b9d7df2528973d8993244",
+    "v10_source_sha256": "2e0ce1430a1e5d59cd424c50504687aea693ed11f157fd1f5dbaad7cb2b725b7",
+    "capacity_change": "Only bloom_bits and wanted changed from uint32_t to uint64_t (initial literal changed to1ull). Avoids capacity wrap beyond178956970 keys in a shard. Source retains historical V10 comment/usage label to preserve the exact tested bytes."
+  },
+  "data": {
+    "chomp_sieve_v11.cpp": {
+      "bytes": 22328,
+      "sha256": "5ce78972e5d9f6382fa870a516624e12560db00b030b9d7df2528973d8993244"
+    },
+    "seed.bin": {
+      "bytes": 424,
+      "sha256": "d9d23f9b2779a6c991d6c62d1a78f244c64dbaadadf365619574e2ec28661a36"
+    },
+    "base20.bin": {
+      "bytes": 304,
+      "sha256": "3a9c51c5f66dd539cd07c81121ddc0e2104356b76c73a4eec7aa1fad0b6f1c12"
+    },
+    "preload20.bin": {
+      "bytes": 1172496720,
+      "sha256": "dd2a903c45f9af8ceb5650315ba52a53f44ea14e094f69d9115748c442c22587"
+    },
+    "checkpoint20.bin": {
+      "bytes": 2437532544,
+      "sha256": "7b94bb92f3474bc70014b176a117420d473a2985e77d1586c72ef9f1af6c16c3"
+    },
+    "chomp_ppositions_20x20_v11.bin": {
+      "bytes": 3610026400,
+      "sha256": "b2d8e2bda7c158162fc61f14f294d5deeba0acbe96c1fd62ba1e765924a88ec4"
+    }
+  },
+  "release_assets": [
+    "chomp_ppositions_20x20_v11.bin.gz",
+    "chomp_v11_20x20_restart.tar.gz",
+    "chomp_v11_source_and_validation.zip",
+    "20x20_V11_MANIFEST.json",
+    "SHA256SUMS_V11"
+  ],
+  "validation": [
+    "Every CHOMPCP2 checksum and strict record ordering.",
+    "All17 width20 classes in sequence R(20,3)..R(20,19).",
+    "Dimension bounds and absence of overlaps across original seed, base20, historical19 checkpoint and new20 checkpoint.",
+    "Complete sorted64-bit catalog with451253296 unique entries.",
+    "Full18 checkpoint equality after capacity fix.",
+    "7-to8 continuation matched all322 independent8x8 P-positions."
+  ],
+  "limitations": "Checksums and reference-range agreement are not a new proof of inherited sieve exclusions. No independent full20 catalog comparison.",
+  "future": "No21x21 computation or further speed-optimization search authorized."
+}
