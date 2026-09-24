@@ -1,30 +1,22 @@
 # Chomp fast
 
-## Latest prerelease: V9 — validated through 18×18
+## V10 — final planned speed-improvement pass
 
-Fresh **18×18 in 66.420 seconds**, versus **73.355 seconds** for V8 run immediately beforehand: **9.45% less time**. Both used 9 workers and identical fresh inputs. All 120 checkpoint records match exactly, covering **37,993,832 unique P-positions**. V9 full 19×19 timing has not yet been measured.
+Fresh **18×18 averaged64.743 seconds** across two runs, versus **66.134 seconds** for V9: **2.10% less time**. All four checkpoints match exactly, preserving **37,993,832 unique P-positions**. V10 is validated through 18×18; its full 19×19 runtime is unmeasured.
 
-- [V9 prerelease](https://github.com/georgeyanceyjr-hash/chomp-fast/releases/tag/v9-18x18)
-- [V9 source, build and self-contained validation](README_V9.md)
-- [V9 measured timing report](speed-report-v9.md)
+- [V10 release](https://github.com/georgeyanceyjr-hash/chomp-fast/releases/tag/v10-18x18)
+- [Build, validation and data links](README_V10.md)
+- [Measured V10 report](speed-report-v10.md)
+- [V10 manifest](18x18_V10_MANIFEST.json)
 
-## Latest full 19×19 validation: V8
+## Latest full 19×19 validation: V9
 
-After its 18×18 prerelease, V8 completed a fresh **19×19 in 416.4578645 seconds (6m 56s)** with 9 workers. Its complete checkpoint is byte-identical to validated V5, confirming **146,561,777 unique P-positions** including seed and base. This was **52.81% less time than V6**. The historical V8 release retains its original 18×18 label.
+V9 completed fresh **19×19 in 387.906746 seconds (6m28s)** with 9 workers, versus the prior V8 run of 416.457865 seconds: **6.86% less time**. The complete checkpoint matches validated V5 and V8, confirming **146,561,777 unique P-positions**, including original seed and base. The historical V9 release retains its 18×18 label because publication preceded that full 19 run.
 
-- [V8 full 19×19 measured timing and exact checkpoint hash](timing-report-v8-19x19.md)
-- [Exact tested V8 source](chomp_sieve_v8_candidate.cpp)
-- [Original V8 prerelease](https://github.com/georgeyanceyjr-hash/chomp-fast/releases/tag/v8-18x18)
+- [V9 full 19 timing and exact checkpoint hash](timing-report-v9-19x19.md)
+- [Exact tested V9 source](chomp_sieve_v9_candidate.cpp)
 - [FULL 19×19 catalog](https://github.com/georgeyanceyjr-hash/chomp-fast/releases/download/v5-19x19/chomp_ppositions_19x19_v5.bin.gz)
-- [Complete restart data, unchanged V5 assets](https://github.com/georgeyanceyjr-hash/chomp-fast/releases/download/v5-19x19/chomp_v5_19x19_restart.tar.gz)
-- [V6 build and tested future 20×20 continuation instructions](README_V6.md)
+- [Complete original seed/base and checkpoint restart bundle](https://github.com/georgeyanceyjr-hash/chomp-fast/releases/download/v5-19x19/chomp_v5_19x19_restart.tar.gz)
+- [Tested future 20×20 continuation instructions](README_V6.md)
 
-## Earlier versions
-
-V6 completed fresh 19×19 in **14m 43s**, versus V5's **37m 54s**, with byte-identical results. V7 completed fresh 18×18 in **1m 52s**; V8's original 18×18 run took **1m 14s**. These earlier timings were measured separately from the latest V8/V9 18×18 comparison.
-
-- [V6 release](https://github.com/georgeyanceyjr-hash/chomp-fast/releases/tag/v6-19x19)
-- [V7 prerelease and instructions](README_V7.md)
-- [V5 full catalog, validation and restart release](https://github.com/georgeyanceyjr-hash/chomp-fast/releases/tag/v5-19x19)
-
-V5 data remains valid and compatible. V2–V4 historical claims are superseded. No 20×20 computation has been performed.
+Earlier releases remain available. V5 corrected the boundary-move 32-bit popcount bug; uncorrected V4 results are not validated. No 20×20 computation has been started.
