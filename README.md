@@ -1,3 +1,15 @@
+# Current release: Chomp V5
+
+The complete **19×19 catalog contains 146,561,777 unique P-positions**, computed from scratch in **37m 54s** with 9 workers.
+
+- [Download the full catalog and restart package](https://github.com/georgeyanceyjr-hash/chomp-fast/releases/tag/v5-19x19)
+- [V5 build, validation and future 20×20 restart instructions](README_V5.md)
+- [Exact results manifest](19x19_V5_MANIFEST.json) and [SHA-256 checksums](SHA256SUMS)
+
+V5 fixes a 32-bit population count in boundary transforms. Use V5 for new work. The historical V2–V4 claims below are retained as history and are **superseded, not revalidated by V5**. Some historical files mentioned below are not distributed in this repository.
+
+---
+
 # Chomp Fast
 
 This is a modern, compact solver built from George Yancey's original Sage
