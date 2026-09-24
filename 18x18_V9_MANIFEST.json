@@ -1,0 +1,77 @@
+{
+  "version": "V9",
+  "validation_scope": "fresh complete 18x18; not tested on full 19x19",
+  "source_sha256": "6b42adb8956f1ee107ea80b4ddcf38428fc20de389894deb7c1635f67cb7b8ab",
+  "compiler": "Apple clang version 17.0.0 (clang-1700.0.13.5)",
+  "compile_flags": [
+    "-O3",
+    "-march=native",
+    "-DNDEBUG",
+    "-pthread",
+    "-std=c++17"
+  ],
+  "workers": 9,
+  "batch_size": 16384,
+  "v8_wall_seconds": 73.355474125,
+  "v9_wall_seconds": 66.420068125,
+  "percent_less_time": 9.454517311389543,
+  "speed_ratio": 1.1044173274099605,
+  "checkpoint_sha256": "a0cb64b2783f8a650e16ab25f8ab0696dbe3e6789728ac2d9fdcc213954e5b8a",
+  "checkpoint_records": 120,
+  "checkpoint_positions": 37993702,
+  "bootstrap_positions": 102,
+  "base_positions": 28,
+  "total_unique_positions": 37993832,
+  "timing_scope": "launch through solver exit, including loading/checkpoint writing; excludes compilation and final SHA256 validation",
+  "independent_checks": {
+    "enumeration_parameter_cases": 848,
+    "enumeration_candidates": 12028876,
+    "row_model_interior_moves": 3344280,
+    "corner_membership_floor_decisions": 300000,
+    "membership_insertions": 10000,
+    "membership_negative_queries": 200000
+  },
+  "status": "prerelease; validated through 18x18 only",
+  "source": "chomp_sieve_v9_candidate.cpp",
+  "package": "chomp_v9_source_and_validation.zip",
+  "publication": {
+    "tag": "v9-18x18",
+    "prerelease": true,
+    "release_url": "https://github.com/georgeyanceyjr-hash/chomp-fast/releases/tag/v9-18x18",
+    "scope": "V9 full19 timing is planned after publication; not measured in this release."
+  },
+  "inputs": {
+    "seed.bin": {
+      "bytes": 424,
+      "sha256": "d9d23f9b2779a6c991d6c62d1a78f244c64dbaadadf365619574e2ec28661a36"
+    },
+    "base18.bin": {
+      "bytes": 256,
+      "sha256": "29ef74bccbaf50ae7bb7c078f615b5f63fa088562cf29a99228c513fb55f0fae"
+    }
+  },
+  "checkpoint_bundled": false,
+  "checkpoint_bytes": 303952504,
+  "terminal_class": [
+    18,
+    17
+  ],
+  "checkpoint_note": "The package includes original inputs and a runner that reproduces the complete checkpoint and verifies its SHA256.",
+  "previous_v8_full19": {
+    "wall_seconds": 416.4578645,
+    "workers": 9,
+    "checkpoint_sha256": "723271af0730f423cd529f462907feb177f210fcc8ac9c38b01d5070fa99ed06",
+    "total_unique_positions": 146561777,
+    "timing_report": "timing-report-v8-19x19.md"
+  },
+  "shared_19x19_assets": {
+    "catalog": {
+      "url": "https://github.com/georgeyanceyjr-hash/chomp-fast/releases/download/v5-19x19/chomp_ppositions_19x19_v5.bin.gz",
+      "sha256": "fd8913f6b7224f80d6f515b235f424054186552f9086a6d59d559a2c2c3b92a3"
+    },
+    "restart": {
+      "url": "https://github.com/georgeyanceyjr-hash/chomp-fast/releases/download/v5-19x19/chomp_v5_19x19_restart.tar.gz",
+      "sha256": "4c8f04f146a0577fdf48dfe19199a7352111e28f5a74a67f80a3354874eadf51"
+    }
+  }
+}
