@@ -1,0 +1,109 @@
+{
+  "version": "V12",
+  "run": "fresh 10x42",
+  "rows": 10,
+  "columns": 42,
+  "workers": 9,
+  "state": "validated",
+  "supervisor_pid": 17079,
+  "previous_computed_positions_reused": 0,
+  "source_sha256": "cf88545b8abaa5cd45f8dafe14fb947852c6022c056d2089665699a623ed016a",
+  "binary_sha256": "18c046008973b9652376cb4d44ef4d6140cd39f670f262058e404f2c92c9c59e",
+  "started_at": "2026-09-24T19:06:22.131802+00:00",
+  "inputs": {
+    "seed_positions": 1,
+    "seed": "poisoned single square only",
+    "analytic_base_positions": 89,
+    "base_families": [
+      "two-row (w,w-1), including transposes",
+      "equal-arm L shapes"
+    ],
+    "previous_computed_positions_reused": 0
+  },
+  "base_generation_seconds": 0.0006319159999999997,
+  "command": [
+    "/Users/georgeyancey/Documents/Codex/2026-09-24/fin/work/chomp12/chomp_sieve_v12",
+    "/Users/georgeyancey/Documents/Codex/2026-09-24/fin/outputs/chomp-v12/fresh-10x42-restart1/seed.bin",
+    "42",
+    "/Users/georgeyancey/Documents/Codex/2026-09-24/fin/outputs/chomp-v12/fresh-10x42-restart1/checkpoint.bin",
+    "/Users/georgeyancey/Documents/Codex/2026-09-24/fin/outputs/chomp-v12/fresh-10x42-restart1/base.bin",
+    "0",
+    "0",
+    "9",
+    "10",
+    "0"
+  ],
+  "timing_scope": "Fresh seed/base generation through solver exit; no previous computed positions. Separate solver launch-to-exit time also recorded. Excludes compilation and post-run validation/merge/hash.",
+  "pid": 17080,
+  "exit_code": 0,
+  "solver_wall_seconds": 735.728534417,
+  "total_wall_seconds": 735.729373958,
+  "finished_at": "2026-09-24T19:18:37.903673+00:00",
+  "total_unique_positions": 107342199,
+  "validated_at": "2026-09-24T19:18:44.330394+00:00",
+  "catalog_sha256": "13893537aba7adcf0d5f168d7e9fd9147732c73777021568b18d100051440cb5",
+  "full_catalog_exact_match_to_continuation": true,
+  "padhi_nonempty_total_exact_match": true,
+  "padhi_rectangular_start_counts_matched": 420,
+  "winning_bites": [
+    [
+      5,
+      36
+    ],
+    [
+      7,
+      30
+    ],
+    [
+      8,
+      26
+    ]
+  ],
+  "checkpoint_records": 284,
+  "padhi_reported_solve_seconds": 2141,
+  "reported_time_ratio": 2.910037407480514,
+  "comparison_limit": "Different machines, worker configurations, algorithms and timing scopes; not a controlled same-hardware benchmark. Full byte identity is against our continuation catalog, not a Padhi full catalog.",
+  "artifacts": {
+    "seed.bin": {
+      "bytes": 20,
+      "sha256": "fd97be9265a914c9cea04275aac6aee70ade176c48b8ba89f3852f4e66ca8b22"
+    },
+    "base.bin": {
+      "bytes": 744,
+      "sha256": "ab33089e695671f6be471c66acaee50bba3531b203053709aec4a93ce1b5e5e3"
+    },
+    "checkpoint.bin": {
+      "bytes": 1717460392,
+      "sha256": "faad2e1c5bc2e3955081070404b5c1f69251f8ffcb145bf7229449422ab6db90"
+    },
+    "chomp_ppositions_10x42_v12_fresh.bin": {
+      "bytes": 858737624,
+      "sha256": "13893537aba7adcf0d5f168d7e9fd9147732c73777021568b18d100051440cb5"
+    },
+    "sieve.log": {
+      "bytes": 26883,
+      "sha256": "69043a3e7c5b26e0f5304dec1cc77146971dcc026a121aeba11f47ba4af9f8fe"
+    },
+    "validation.log": {
+      "bytes": 82,
+      "sha256": "75428958a3f1643c434462de95682677aeca34a726900f305e2bd667e5ec36f5"
+    },
+    "fresh_inputs.py": {
+      "bytes": 1281,
+      "sha256": "c4accaee2383fd059d3e326f99798425a22a703d796149b22b12594802967159"
+    },
+    "run_fresh.py": {
+      "bytes": 5562,
+      "sha256": "69b7419ddcfbce3f22c49f86ddef347bd002560d46cebebb3b62ff78f45a9718"
+    },
+    "validate_fresh_rectangle.cpp": {
+      "bytes": 4533,
+      "sha256": "2fb463fbe4593cada6e2fcf39523a56d27c471ebe0224768b8fd95928e20c482"
+    }
+  },
+  "published_filenames": {
+    "checkpoint.bin": "checkpoint_10x42_v12.bin",
+    "chomp_ppositions_10x42_v12_fresh.bin": "chomp_ppositions_10x42_v12.bin"
+  },
+  "publication_note": "V12 extends V11 class traversal for rectangles; move and lookup logic unchanged. Square performance equivalence is expected but not benchmarked head-to-head. Fresh timing is the completed restart1 run; interrupted earlier attempt excluded."
+}

@@ -1,25 +1,16 @@
-# Chomp fast
+# Fast Chomp sieve — V12
 
-## V11 — complete 20×20 catalog
+V12 supports both square and rectangular computations, preserving V11's move logic and adding rectangular traversal bounds.
 
-**451,253,296 unique P-positions**, including every recorded 19×19 position and **304,691,519** additions.
+The **fresh 10×42 run took 12m 16s with 9 workers**, using no previous computed positions. Its **107,342,199 nonempty P-positions** and winning bites **(5,36), (7,30), (8,26)** agree with Padhi's published results. The complete catalog, source, verification evidence and restart data are available.
 
-The **19-to-20 continuation took 22 minutes 24 seconds** (1,344.416611708 seconds), using 9 workers. This includes loading the complete 19×19 input and computing all 17 new width-20 classes. It is not a fresh 20×20 timing.
+- [V12 release and complete 10×42 data](https://github.com/georgeyanceyjr-hash/chomp-fast/releases/tag/v12-10x42)
+- [V12 build, validation, square/rectangle usage and restart instructions](README_V12.md)
+- [Fresh timing report](timing-report-v12-10x42.md)
+- [V12 manifest](10x42_V12_MANIFEST.json)
+- [V11 release and complete 20×20 data: 451,253,296 P-positions](https://github.com/georgeyanceyjr-hash/chomp-fast/releases/tag/v11-20x20)
+- [V11 documentation](README_V11.md)
 
-- [V11 release](https://github.com/georgeyanceyjr-hash/chomp-fast/releases/tag/v11-20x20)
-- [FULL 20×20 catalog](https://github.com/georgeyanceyjr-hash/chomp-fast/releases/download/v11-20x20/chomp_ppositions_20x20_v11.bin.gz)
-- [Complete restart data](https://github.com/georgeyanceyjr-hash/chomp-fast/releases/download/v11-20x20/chomp_v11_20x20_restart.tar.gz)
-- [Build, validation, formats and restart instructions](README_V11.md)
-- [Manifest](20x20_V11_MANIFEST.json) and [timing report](timing-report-v11-20x20.md)
+Padhi's published 10×42 solve took 35m 41s. Our reported time is 2.91 times shorter, but hardware, worker configurations and timing scopes differ. This is an independent reproduction of his result, not a claim to discovering the triple.
 
-V11 widens two filter-capacity counters to 64 bits. The exact tested source is preserved. Full checkpoint checksums, ordering, bounds, all new classes and catalog uniqueness passed; the correction also matched the complete 18×18 reference and independent 8×8 continuation results. There is no independent full 20×20 catalog comparison yet.
-
-## Earlier results
-
-V10 completed fresh 19×19 in **385.272641 seconds (6m 25s)**, with the exact V5/V9 checkpoint and 146,561,777 positions. V9 took 387.906746 seconds; V8 took 416.457865 seconds. These were separate measured runs. The historical V9 and V10 release tags retain their original 18×18 labels because publication preceded their full 19×19 runs.
-
-- [V10 documentation](README_V10.md)
-- [V9 full 19×19 timing report](timing-report-v9-19x19.md)
-- [Original complete 19×19 release](https://github.com/georgeyanceyjr-hash/chomp-fast/releases/tag/v5-19x19)
-
-All previous releases remain available. V4's uncorrected results are superseded. No 21×21 computation has been started, and no further speed-improvement search is scheduled.
+V12's square traversal and core logic match V11's; equal square speed is expected but has not been benchmarked head-to-head. Prior releases remain available. Historical V4 results are not validated by the corrected versions.
