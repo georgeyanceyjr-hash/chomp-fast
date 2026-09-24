@@ -2,9 +2,9 @@
 
 V12 supports both square and rectangular computations, preserving V11's move logic and adding rectangular traversal bounds.
 
-The **fresh 10×42 run took 12m 16s with 9 workers**, using no previous computed positions. Its **107,342,199 nonempty P-positions** and winning bites **(5,36), (7,30), (8,26)** agree with Padhi's published results. The complete catalog, source, verification evidence and restart data are available.
+The **fresh 10×42 run took 12m 16s with 9 workers**, using no previous computed positions. Its **107,342,199 nonempty P-positions** and winning bites **(5,36), (7,30), (8,26)** agree with Padhi's published results. The source and reproduction instructions are published. The complete catalog and restart data are preserved locally; uploading them is deferred until a faster connection is available.
 
-- [V12 release and complete 10×42 data](https://github.com/georgeyanceyjr-hash/chomp-fast/releases/tag/v12-10x42)
+- [V12 source release (data upload pending)](https://github.com/georgeyanceyjr-hash/chomp-fast/releases/tag/v12-10x42)
 - [V12 build, validation, square/rectangle usage and restart instructions](README_V12.md)
 - [Fresh timing report](timing-report-v12-10x42.md)
 - [V12 manifest](10x42_V12_MANIFEST.json)
