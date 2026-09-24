@@ -1,0 +1,26 @@
+{
+  "version": "V5",
+  "dimension": 19,
+  "total_unique_positions": 146561777,
+  "seed_count": 102,
+  "base_count": 31,
+  "checkpoint_positions": 146561644,
+  "checkpoint_records": 136,
+  "last_class": "19x18",
+  "last_class_new_before_conjugates": 29940283,
+  "wall_clock_seconds": 2273.80503,
+  "solver_log_elapsed": "37m 54s",
+  "coverage_18x18_elapsed_in_this_run": "9m 32s (includes earlier 19-wide classes; not an isolated 18x18 benchmark)",
+  "started_at_utc": "2026-09-24T12:59:18.362668+00:00",
+  "finished_at_utc": "2026-09-24T13:37:12.167698+00:00",
+  "workers": 9,
+  "validation": [
+    "Every checkpoint checksum passed",
+    "Record order, class membership, bounds and strict ordering passed",
+    "No overlapping or duplicate positions",
+    "Independent exhaustive 8x8: 322 P-positions, zero differences",
+    "1,993,338 independent row-model move comparisons",
+    "7x7 to 8x8 continuation: exact 322 P-positions"
+  ],
+  "correction": "Boundary transform now uses __builtin_popcountll(mb), replacing 32-bit __builtin_popcount(mb). V4 results are superseded and not validated by this run."
+}
