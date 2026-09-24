@@ -1,0 +1,153 @@
+class 4x3 tested=0 new=0 total_new_with_conjugates=31 rate=0/s elapsed=0s
+MILESTONE coverage 4x4 reached split=0s elapsed=0s
+class 5x3 tested=0 new=0 total_new_with_conjugates=31 rate=0/s elapsed=0s
+class 6x3 tested=0 new=0 total_new_with_conjugates=31 rate=0/s elapsed=0s
+class 7x3 tested=0 new=0 total_new_with_conjugates=31 rate=0/s elapsed=0s
+class 8x3 tested=0 new=0 total_new_with_conjugates=31 rate=0/s elapsed=0s
+class 9x3 tested=0 new=0 total_new_with_conjugates=31 rate=0/s elapsed=0s
+class 10x3 tested=36 new=3 total_new_with_conjugates=37 rate=89265/s elapsed=0s
+class 11x3 tested=45 new=3 total_new_with_conjugates=43 rate=118341/s elapsed=0s
+class 12x3 tested=55 new=5 total_new_with_conjugates=53 rate=165517/s elapsed=0s
+class 13x3 tested=66 new=4 total_new_with_conjugates=61 rate=213935/s elapsed=0s
+class 14x3 tested=78 new=6 total_new_with_conjugates=73 rate=261336/s elapsed=0s
+class 15x3 tested=91 new=4 total_new_with_conjugates=81 rate=309510/s elapsed=0s
+class 16x3 tested=105 new=5 total_new_with_conjugates=91 rate=362321/s elapsed=0s
+class 17x3 tested=120 new=7 total_new_with_conjugates=105 rate=417208/s elapsed=0s
+class 18x3 tested=136 new=5 total_new_with_conjugates=115 rate=474977/s elapsed=0s
+class 19x3 tested=153 new=8 total_new_with_conjugates=131 rate=535633/s elapsed=0s
+class 5x4 tested=0 new=0 total_new_with_conjugates=131 rate=527099/s elapsed=0s
+MILESTONE coverage 5x5 reached split=0s elapsed=0s
+class 6x4 tested=0 new=0 total_new_with_conjugates=131 rate=518656/s elapsed=0s
+class 7x4 tested=0 new=0 total_new_with_conjugates=131 rate=509854/s elapsed=0s
+class 8x4 tested=0 new=0 total_new_with_conjugates=131 rate=487737/s elapsed=0s
+class 9x4 tested=98 new=11 total_new_with_conjugates=153 rate=511080/s elapsed=0s
+class 10x4 tested=136 new=17 total_new_with_conjugates=187 rate=550034/s elapsed=0s
+class 11x4 tested=183 new=8 total_new_with_conjugates=203 rate=607028/s elapsed=0s
+class 12x4 tested=240 new=14 total_new_with_conjugates=231 rate=677839/s elapsed=0s
+class 13x4 tested=308 new=29 total_new_with_conjugates=289 rate=762703/s elapsed=0s
+class 14x4 tested=388 new=27 total_new_with_conjugates=343 rate=878335/s elapsed=0s
+class 15x4 tested=481 new=33 total_new_with_conjugates=409 rate=1009779/s elapsed=0s
+class 16x4 tested=588 new=20 total_new_with_conjugates=449 rate=1164385/s elapsed=0s
+class 17x4 tested=710 new=46 total_new_with_conjugates=541 rate=1330261/s elapsed=0s
+class 18x4 tested=848 new=33 total_new_with_conjugates=607 rate=1528232/s elapsed=0s
+class 19x4 tested=1003 new=48 total_new_with_conjugates=703 rate=1739676/s elapsed=0s
+class 6x5 tested=0 new=0 total_new_with_conjugates=703 rate=1725142/s elapsed=0s
+MILESTONE coverage 6x6 reached split=0s elapsed=0s
+class 7x5 tested=0 new=0 total_new_with_conjugates=703 rate=1710766/s elapsed=0s
+class 8x5 tested=181 new=21 total_new_with_conjugates=745 rate=1691298/s elapsed=0s
+class 9x5 tested=281 new=16 total_new_with_conjugates=777 rate=1654271/s elapsed=0s
+class 10x5 tested=419 new=11 total_new_with_conjugates=799 rate=1673132/s elapsed=0s
+class 11x5 tested=604 new=42 total_new_with_conjugates=883 rate=1746072/s elapsed=0s
+class 12x5 tested=846 new=48 total_new_with_conjugates=979 rate=1862968/s elapsed=0s
+class 13x5 tested=1156 new=55 total_new_with_conjugates=1089 rate=2035188/s elapsed=0s
+class 14x5 tested=1546 new=33 total_new_with_conjugates=1155 rate=2259021/s elapsed=0s
+class 15x5 tested=2029 new=76 total_new_with_conjugates=1307 rate=2541815/s elapsed=0s
+class 16x5 tested=2619 new=124 total_new_with_conjugates=1555 rate=2869679/s elapsed=0s
+class 17x5 tested=3331 new=105 total_new_with_conjugates=1765 rate=3298416/s elapsed=0s
+class 18x5 tested=4181 new=86 total_new_with_conjugates=1937 rate=3759741/s elapsed=0s
+class 19x5 tested=5186 new=164 total_new_with_conjugates=2265 rate=4264985/s elapsed=0s
+class 7x6 tested=243 new=27 total_new_with_conjugates=2319 rate=4217538/s elapsed=0s
+MILESTONE coverage 7x7 reached split=0s elapsed=0s
+class 8x6 tested=426 new=25 total_new_with_conjugates=2369 rate=4194295/s elapsed=0s
+class 9x6 tested=709 new=5 total_new_with_conjugates=2379 rate=4213408/s elapsed=0s
+class 10x6 tested=1130 new=76 total_new_with_conjugates=2531 rate=4234743/s elapsed=0s
+class 11x6 tested=1736 new=88 total_new_with_conjugates=2707 rate=4319224/s elapsed=0s
+class 12x6 tested=2584 new=78 total_new_with_conjugates=2863 rate=4493554/s elapsed=0s
+class 13x6 tested=3742 new=231 total_new_with_conjugates=3325 rate=4710706/s elapsed=0s
+class 14x6 tested=5290 new=233 total_new_with_conjugates=3791 rate=5022909/s elapsed=0s
+class 15x6 tested=7321 new=296 total_new_with_conjugates=4383 rate=5431435/s elapsed=0s
+class 16x6 tested=9942 new=343 total_new_with_conjugates=5069 rate=5884364/s elapsed=0s
+class 17x6 tested=13275 new=211 total_new_with_conjugates=5491 rate=6563688/s elapsed=0s
+class 18x6 tested=17458 new=477 total_new_with_conjugates=6445 rate=7124189/s elapsed=0s
+class 19x6 tested=22646 new=687 total_new_with_conjugates=7819 rate=7676588/s elapsed=0s
+class 8x7 tested=916 new=42 total_new_with_conjugates=7903 rate=7640894/s elapsed=0s
+MILESTONE coverage 8x8 reached split=0s elapsed=0s
+class 9x7 tested=1627 new=50 total_new_with_conjugates=8003 rate=7643600/s elapsed=0s
+class 10x7 tested=2759 new=27 total_new_with_conjugates=8057 rate=7676304/s elapsed=0s
+class 11x7 tested=4497 new=222 total_new_with_conjugates=8501 rate=7738123/s elapsed=0s
+class 12x7 tested=7083 new=321 total_new_with_conjugates=9143 rate=7848317/s elapsed=0s
+class 13x7 tested=10827 new=361 total_new_with_conjugates=9865 rate=8049024/s elapsed=0s
+class 14x7 tested=16119 new=506 total_new_with_conjugates=10877 rate=8292674/s elapsed=0s
+class 15x7 tested=23442 new=318 total_new_with_conjugates=11513 rate=8664150/s elapsed=0s
+class 16x7 tested=33386 new=1366 total_new_with_conjugates=14245 rate=8920862/s elapsed=0s
+class 17x7 tested=46663 new=1443 total_new_with_conjugates=17131 rate=9208022/s elapsed=0s
+class 18x7 tested=64123 new=1168 total_new_with_conjugates=19467 rate=9494118/s elapsed=0s
+class 19x7 tested=86771 new=2619 total_new_with_conjugates=24705 rate=9455602/s elapsed=0s
+class 9x8 tested=3463 new=185 total_new_with_conjugates=25075 rate=9443921/s elapsed=0s
+MILESTONE coverage 9x9 reached split=0s elapsed=0s
+class 10x8 tested=6224 new=271 total_new_with_conjugates=25617 rate=9452485/s elapsed=0s
+class 11x8 tested=10723 new=382 total_new_with_conjugates=26381 rate=9490426/s elapsed=0s
+class 12x8 tested=17808 new=121 total_new_with_conjugates=26623 rate=9623000/s elapsed=0s
+class 13x8 tested=28637 new=986 total_new_with_conjugates=28595 rate=9730680/s elapsed=0s
+class 14x8 tested=44758 new=1368 total_new_with_conjugates=31331 rate=9887008/s elapsed=0s
+class 15x8 tested=68202 new=1614 total_new_with_conjugates=34559 rate=10043173/s elapsed=0s
+class 16x8 tested=101590 new=1858 total_new_with_conjugates=38275 rate=10153079/s elapsed=0s
+class 17x8 tested=148255 new=1518 total_new_with_conjugates=41311 rate=10482595/s elapsed=0s
+class 18x8 tested=212380 new=6655 total_new_with_conjugates=54621 rate=9763862/s elapsed=0s
+class 19x8 tested=299153 new=6484 total_new_with_conjugates=67589 rate=9752529/s elapsed=0s
+class 10x9 tested=13154 new=466 total_new_with_conjugates=68521 rate=9770534/s elapsed=0s
+MILESTONE coverage 10x10 reached split=0s elapsed=0s
+class 11x9 tested=23879 new=892 total_new_with_conjugates=70305 rate=9806879/s elapsed=0s
+class 12x9 tested=41689 new=1016 total_new_with_conjugates=72337 rate=9852062/s elapsed=0s
+class 13x9 tested=70328 new=562 total_new_with_conjugates=73461 rate=10048013/s elapsed=0s
+class 14x9 tested=115088 new=2353 total_new_with_conjugates=78167 rate=10146289/s elapsed=0s
+class 15x9 tested=183292 new=5641 total_new_with_conjugates=89449 rate=9954172/s elapsed=0s
+class 16x9 tested=284884 new=5801 total_new_with_conjugates=101051 rate=9990070/s elapsed=0s
+class 17x9 tested=433141 new=8984 total_new_with_conjugates=119019 rate=10098207/s elapsed=0s
+class 18x9 tested=645523 new=11062 total_new_with_conjugates=141143 rate=10015698/s elapsed=0s
+class 19x9 tested=944678 new=9439 total_new_with_conjugates=160021 rate=10998187/s elapsed=0s
+class 11x10 tested=50191 new=1074 total_new_with_conjugates=162169 rate=11018912/s elapsed=0s
+MILESTONE coverage 11x11 reached split=0s elapsed=0s
+class 12x10 tested=91882 new=1844 total_new_with_conjugates=165857 rate=11010956/s elapsed=0s
+class 13x10 tested=162212 new=3651 total_new_with_conjugates=173159 rate=10981421/s elapsed=0s
+class 14x10 tested=277302 new=6469 total_new_with_conjugates=186097 rate=10845060/s elapsed=0s
+class 15x10 tested=460596 new=2665 total_new_with_conjugates=191427 rate=11252069/s elapsed=0s
+class 16x10 tested=745482 new=19708 total_new_with_conjugates=230843 rate=10641230/s elapsed=1s
+class 17x10 tested=1178625 new=26843 total_new_with_conjugates=284529 rate=10202082/s elapsed=1s
+class 18x10 tested=1824150 new=40468 total_new_with_conjugates=365465 rate=9805246/s elapsed=1s
+class 19x10 tested=2768830 new=58769 total_new_with_conjugates=483003 rate=9466336/s elapsed=1s
+class 12x11 tested=192268 new=5952 total_new_with_conjugates=494907 rate=9472474/s elapsed=1s
+MILESTONE coverage 12x12 reached split=1s elapsed=1s
+class 13x11 tested=354482 new=7499 total_new_with_conjugates=509905 rate=9528828/s elapsed=1s
+class 14x11 tested=631786 new=14584 total_new_with_conjugates=539073 rate=9573108/s elapsed=1s
+class 15x11 tested=1092384 new=18035 total_new_with_conjugates=575143 rate=9692158/s elapsed=1s
+class 16x11 tested=1837868 new=7971 total_new_with_conjugates=591085 rate=10382978/s elapsed=2s
+class 17x11 tested=3016495 new=53066 total_new_with_conjugates=697217 rate=10369288/s elapsed=2s
+class 18x11 tested=4840647 new=90865 total_new_with_conjugates=878947 rate=10096226/s elapsed=2s
+class 19x11 tested=7609479 new=71519 total_new_with_conjugates=1021985 rate=10970930/s elapsed=3s
+class 13x12 tested=739022 new=15979 total_new_with_conjugates=1053943 rate=10953438/s elapsed=3s
+MILESTONE coverage 13x13 reached split=2s elapsed=3s
+class 14x12 tested=1370810 new=30244 total_new_with_conjugates=1114431 rate=10910088/s elapsed=3s
+class 15x12 tested=2463196 new=46678 total_new_with_conjugates=1207787 rate=10871040/s elapsed=3s
+class 16x12 tested=4301066 new=57858 total_new_with_conjugates=1323503 rate=11033167/s elapsed=4s
+class 17x12 tested=7317563 new=98703 total_new_with_conjugates=1520909 rate=11198638/s elapsed=4s
+class 18x12 tested=12158212 new=52564 total_new_with_conjugates=1626037 rate=12400000/s elapsed=5s
+class 19x12 tested=19767693 new=294190 total_new_with_conjugates=2214417 rate=11534171/s elapsed=7s
+class 14x13 tested=2848858 new=29581 total_new_with_conjugates=2273579 rate=11662166/s elapsed=7s
+MILESTONE coverage 14x14 reached split=4s elapsed=7s
+class 15x13 tested=5312056 new=85746 total_new_with_conjugates=2445071 rate=11626341/s elapsed=8s
+class 16x13 tested=9613124 new=183047 total_new_with_conjugates=2811165 rate=11333407/s elapsed=9s
+class 17x13 tested=16930689 new=179770 total_new_with_conjugates=3170705 rate=11616135/s elapsed=10s
+class 18x13 tested=29088903 new=444575 total_new_with_conjugates=4059855 rate=11355132/s elapsed=13s
+class 19x13 tested=48856598 new=132946 total_new_with_conjugates=4325747 rate=12967766/s elapsed=15s
+class 15x14 tested=11009776 new=125401 total_new_with_conjugates=4576549 rate=12925065/s elapsed=16s
+MILESTONE coverage 15x15 reached split=9s elapsed=16s
+class 16x14 tested=20622902 new=325726 total_new_with_conjugates=5228001 rate=12498031/s elapsed=18s
+class 17x14 tested=37553593 new=559645 total_new_with_conjugates=6347291 rate=12011937/s elapsed=22s
+class 18x14 tested=66642498 new=1144947 total_new_with_conjugates=8637185 rate=11246133/s elapsed=29s
+class 19x14 tested=115499098 new=1334513 total_new_with_conjugates=11306211 rate=11260383/s elapsed=39s
+class 16x15 tested=42642458 new=640466 total_new_with_conjugates=12587143 rate=11033926/s elapsed=44s
+MILESTONE coverage 16x16 reached split=28s elapsed=44s
+class 17x15 tested=80196053 new=1086762 total_new_with_conjugates=14760667 rate=10887246/s elapsed=52s
+class 18x15 tested=146838553 new=2286511 total_new_with_conjugates=19333689 rate=10280647/s elapsed=1m 9s
+class 19x15 tested=262337653 new=3183864 total_new_with_conjugates=25701417 rate=10074525/s elapsed=1m 37s
+class 17x16 tested=165480973 new=1755339 total_new_with_conjugates=29212095 rate=10215175/s elapsed=1m 52s
+MILESTONE coverage 17x17 reached split=1m 8s elapsed=1m 52s
+class 18x16 tested=312319528 new=4800948 total_new_with_conjugates=38813991 rate=9521388/s elapsed=2m 33s
+class 19x16 tested=574657183 new=6920422 total_new_with_conjugates=52654835 rate=8962531/s elapsed=3m 46s
+class 18x17 tested=643281478 new=4685121 total_new_with_conjugates=62025077 rate=9344547/s elapsed=4m 46s
+MILESTONE coverage 18x18 reached split=2m 54s elapsed=4m 46s
+class 19x17 tested=1217938663 new=12328016 total_new_with_conjugates=86681109 rate=8639267/s elapsed=7m 30s
+class 19x18 tested=2504501623 new=29940283 total_new_with_conjugates=146561675 rate=7245232/s elapsed=14m 42s
+MILESTONE coverage 19x19 reached split=9m 57s elapsed=14m 42s
+done tested=6393534312 basic=5169538011 known=786 width=923750299 height=1320226930 corner=4076276261 added=146561675

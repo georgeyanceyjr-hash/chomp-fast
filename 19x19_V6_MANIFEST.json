@@ -1,0 +1,17 @@
+{
+  "started_at": "2026-09-24T14:13:52.762537+00:00",
+  "finished_at": "2026-09-24T14:28:35.268798+00:00",
+  "wall_seconds": 882.522304166,
+  "workers": 9,
+  "source_sha256": "a84c38084362a1ef7e2796c1014bbccee2915825bf63c05705b7e73bf9830b48",
+  "expected_checkpoint_sha256": "723271af0730f423cd529f462907feb177f210fcc8ac9c38b01d5070fa99ed06",
+  "actual_checkpoint_sha256": "723271af0730f423cd529f462907feb177f210fcc8ac9c38b01d5070fa99ed06",
+  "exact_match": true,
+  "version": "V6",
+  "total_unique_positions": 146561777,
+  "v5_wall_seconds": 2273.80503,
+  "speedup": 2.5764844914019345,
+  "time_reduction_percent": 61.18742405253629,
+  "data_release": "https://github.com/georgeyanceyjr-hash/chomp-fast/releases/tag/v5-19x19",
+  "note": "Source is byte-identical to tested candidate; original experimental header and usage label retained for reproducibility. Now validated through 19x19."
+}
