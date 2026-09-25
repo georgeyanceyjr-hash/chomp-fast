@@ -13,4 +13,4 @@ The **fresh 10×42 run took 12m 16s with 9 workers**, using no previous computed
 
 Padhi's published 10×42 solve took 35m 41s. Our reported time is 2.91 times shorter, but hardware, worker configurations and timing scopes differ. This is an independent reproduction of his result, not a claim to discovering the triple.
 
-V12's square traversal and core logic match V11's; equal square speed is expected but has not been benchmarked head-to-head. Prior releases remain available. Historical V4 results are not validated by the corrected versions.
+V12's square traversal and core logic match V11's; equal square speed is expected but has not been benchmarked head-to-head. Prior releases remain available. 
